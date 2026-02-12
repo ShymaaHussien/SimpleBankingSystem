@@ -1,0 +1,40 @@
+@startuml
+
+class Account {
+    - String accountNumber
+    - String accountHolderName
+    - double balance
+    + deposit(double amount)
+    + withdraw(double amount)
+    + getBalance(): double
+}
+
+class SavingsAccount {
+    - double interestRate
+    + calculateInterest(): double
+}
+
+class CurrentAccount {
+    - double overdraftLimit
+}
+
+class BankService {
+    + deposit(Account account, double amount)
+    + withdraw(Account account, double amount)
+}
+
+class BankServiceImpl {
+    + deposit(Account account, double amount)
+    + withdraw(Account account, double amount)
+}
+
+class InsufficientBalanceException {
+    + InsufficientBalanceException(String message)
+}
+
+Account <|-- SavingsAccount
+Account <|-- CurrentAccount
+BankService <|.. BankServiceImpl
+Account <.. InsufficientBalanceException
+
+@enduml
