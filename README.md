@@ -1,6 +1,6 @@
 # Simple Banking System
 
-This project is a simple banking system implemented in Java using Object-Oriented Programming (OOP) principles.  It provides basic functionalities for managing bank accounts, including savings and current accounts, and supports operations such as deposits, withdrawals, and balance inquiries.
+This project is a simple banking system implemented in Java using Object-Oriented Programming (OOP) principles. It provides basic functionalities for managing bank accounts, including savings and current accounts, and supports operations such as deposits, withdrawals, and balance inquiries.
 
 ## Features
 
